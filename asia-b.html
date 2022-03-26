@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Index</title>
+  <link rel="icon" href="/Images/plane2.png" type="image/x-icon">
+  <link rel="stylesheet" href="Project.css" />
+
+  <style>
+    
+    #grey-box {
+            background-color: lightgray;
+            /* width: 60%; */
+            margin-left: 100px;
+            margin-right: 30px;
+            width: 60%;
+
+        }
+
+        #margin {
+            margin-left: 25px;
+            line-height: 200%;
+
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .blue {
+            color: rgb(13, 13, 197);
+        }
+
+        .size {
+            width: 60%;
+            height: 100px;
+        }
+
+        .normal {
+            height: 30px;
+        }
+  </style>
+
+</head>
+
+
+<body>
+  <div class="body">
+    <div class="nav">
+      <a href="/index.html">Home</a>
+
+
+
+
+      <div class="dropdown">
+        <button class="dropbtn">Asia
+        </button>
+        <div class="dropdown-content">
+          <a href="./asia.html">Thailand</a>
+          <a href="./asia.html">Indonesia</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Europe
+        </button>
+        <div class="dropdown-content">
+          <a href="/europe.html">Croatia</a>
+          <a href="/europe.html">United Kingdom</a>
+        </div>
+      </div>
+
+
+
+      <div class="dropdown">
+        <button class="dropbtn">South/Central America
+        </button>
+        <div class="dropdown-content">
+          <a href="/south-central-america.html">Costa Rica</a>
+          <a href="/south-central-america.html">Belize</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Carribean Islands
+        </button>
+        <div class="dropdown-content">
+          <a href="">Bahamas</a>
+          <a href="">Aruba</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Blogs
+        </button>
+        <div class="dropdown-content">
+          <a href="">Asia</a>
+          <a href="">Europe</a>
+          <a href="">South America</a>
+          <a href="">Carribean Islands</a>
+        </div>
+      </div>
+      <div class="nav">
+        <a href="/sitemap.html">Sitemap</a>
+        <div class="nav">
+          <a href="/contact.html">Contact Us</a>
+          </div>
+      </div>
+     </div>
+  
+        <h1>Blog Submission </h1>
+        <div id="grey-box">
+            <form class="blue" method="POST" action="">
+                <div id="margin">
+                    <div>
+    
+                        <label for="last-name">Last Name:
+                        <input type="text" name="last-name" placeholder="Last Name" id="last-name"></label>
+    
+                    </div>
+                    <div>
+    
+                        <label for="first-name">First Name:</label>
+                        <input type="text" name="first-name" placeholder="First Name" id=first-name>
+                    </div>
+                    <div>
+    
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" placeholder="Email Address" id=email>
+    
+                    </div>
+                    <div>
+                        Gender:
+                        <label>Male
+                            <input type="radio" name="gender" value="male" /> </label>
+                        <label>Female
+                            <input type="radio" name="gender" value="female" />
+                        </label>
+                    </div>
+                        <label for="Grade"> Which Country Did You Visit? </label>
+                        <select name="letter" id="letter-select">
+                            <option value="">-- Please Select Your Country --</option>
+                            <option value="A">Thailand</option>
+                            <option value="A-">Indonesia</option>
+                        </select>
+    
+                    </div>
+                    <div>
+                        How would you rate your experience with covid restrictions :
+                        <label>1
+                            <input type="radio" name="rate" value="1" /> </label>
+                        <label>2
+                            <input type="radio" name="rate" value="2" />
+                        </label>
+                        <label>3
+                        <input type="radio" name="rate" value="3" />
+                        </label>
+                        <label>4
+                            <input type="radio" name="rate" value="4" />
+                            </label>
+                        <label>5
+                            <input type="radio" name="rate" value="5" />
+                            </label>
+
+    
+                        
+                    </div>
+                    <div>
+                        Discribe your Experience:
+                        <br>
+                        <textarea class="size" placeholder="Enter Post Here..."></textarea>
+    
+                    </div>
+                </div>
+    
+                <button type="submit">
+                    <img class="normal" src="images/mailbox.png" alt="submit button" />
+                </button>
+                <button type="reset">
+                    <img class="normal" src="images/reset.png" alt="reset button" />
+                </button>
+            </form>
+        </div>
+    </div> 
+
+
+</body>
+
+</html>
