@@ -28,48 +28,21 @@ h1 {
 
 
 body {
-    background-color: rgba(0, 107, 203, 255);
+    background-color: black;
 }
 
 
-
-
- 
-
-  body {
-    background-color: rgba(0, 107, 203, 255);
-  }
 
   p.heavy {
     font-weight: 800;
   }
 
-  /* ul.nav {
-
-    list-style-type: none;
-    overflow: hidden;
-    background-color:black;
-    display: inline;
-    width: 100%;
-  }
-  .drop {
-display: inline-block;
-color: white;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-
-}
-li.drop{
-display: inline-block;
-} */
-
-  /* Navbar container */
   .nav {
     overflow: hidden;
     background-color: black;
     margin-top: 0px;
     font-size: 16px;
+    font-family: sans-serif;
 
 
   }
@@ -83,6 +56,7 @@ display: inline-block;
     text-align: center;
     padding: 14px 12px;
     text-decoration: none;
+    font-family: sans-serif;
   }
 
   /* The dropdown container */
