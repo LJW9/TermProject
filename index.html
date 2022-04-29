@@ -25,7 +25,7 @@
       width: 100%;
       color: white;
       position: relative;
-      top: -10vh;
+      top: -0vh;
       height: 10vh;
       text-align: center;
       font-size: larger;
@@ -35,8 +35,8 @@
     }
 
     .butt:hover {
-      background-color:black;
-      
+      background-color: black;
+
 
 
     }
@@ -55,99 +55,109 @@
 
     }
 
-.slideshow-container {
-  max-width: 1000px;
-  max-height: 700px;
-  position: relative;
-  display: flex;
-  margin: auto;
-}
+    .slideshow-container {
+      /* max-width: 100vh;
+      max-height: 700px; */
+      position: relative;
+      display: flex;
+      margin: auto;
+    }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-img{
-  height: 700px;
-  width: 1000px;
-}
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
+    img {
+      
+      width: vh;
+    }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
 
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
 
 
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
 
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
 
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+    #blogs , #sitemap{
+      float: right;
+      margin-right: 10px;
+
+    }
   </style>
 
 </head>
@@ -157,10 +167,6 @@ img{
   <div class="body">
     <div class="nav">
       <a href="/index.html">Home</a>
-
-
-
-
       <div class="dropdown">
         <button class="dropbtn">Asia
         </button>
@@ -177,8 +183,6 @@ img{
           <a href="/europe.html">United Kingdom</a>
         </div>
       </div>
-
-
 
       <div class="dropdown">
         <button class="dropbtn">South/Central America
@@ -198,7 +202,7 @@ img{
         </div>
       </div>
 
-      <div class="dropdown">
+      <div class="dropdown" id="blogs">
         <button class="dropbtn">Blogs
         </button>
         <div class="dropdown-content">
@@ -208,13 +212,13 @@ img{
           <a href="">Carribean Islands</a>
         </div>
       </div>
-      <div class="nav">
+      <div class="nav" id="sitemap">
         <a href="/sitemap.html">Sitemap</a>
-        <div class="nav">
+        <div class="nav" id="contact">
           <a href="/contact.html">Contact Us</a>
-          </div>
+        </div>
       </div>
-      
+
     </div>
 
 
@@ -222,37 +226,37 @@ img{
       <div class="mySlides fade">
         <div class="numbertext">1 / 3</div>
         <img src="/Images/Travel-1.jpeg" style="width:100%">
-        <div class="text">Caption Text</div>
+        <div class="text">Breathtaking Views</div>
       </div>
-    
+
       <div class="mySlides fade">
         <div class="numbertext">2 / 3</div>
         <img src="/Images/Travel-2.jpeg" style="width:100%">
-        <div class="text">Caption Two</div>
+        <div class="text">Exciting Cities</div>
       </div>
-    
+
       <div class="mySlides fade">
         <div class="numbertext">3 / 3</div>
         <img src="/Images/Travel-3.jpeg" style="width:100%">
-        <div class="text">Caption Three</div>
+        <div class="text">Ultimate Relaxation</div>
       </div>
-    
-      
-      <a class="prev" id="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" id= "next" onclick="plusSlides(1)">&#10095;</a>
+
+
+      <a class="prev" id="prev">&#10094;</a>
+      <a class="next" id="next">&#10095;</a>
     </div>
     <br>
-    
-    <!-- The dots/circles -->
+
+
     <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" id="d1"></span>
+      <span class="dot" id="d2" onclick="currentSlide(2)"></span>
+      <span class="dot" id="d3" onclick="currentSlide(3)"></span>
     </div>
     <a href="/asia.html">
-      
+
       <div class="butt">
-        
+
         Find Your Next Adventure
       </div>
     </a>
@@ -260,69 +264,81 @@ img{
 
 
   <script>
-  
+
 
     let slideIndex = 1;
-showSlides(slideIndex);
+    showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    // Next/previous controls
+    function plusSlides(n) {
+      console.log("plus")
+      showSlides(slideIndex += n);
+    }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-    
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-// const prevs = document.getElementById("prev")
-//     const nexts = document.getElementById("next")
-//     prevs.onclick = currentSlide(-1)
-//     nexts.onclick = currentSlide(1)
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
 
-function changeText(){
-  let text = document.querySelector(".butt")
-  console.log(text)
-  text.innerHTML = "Click here"
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+    // const prevs = document.getElementById("prev")
+    //     const nexts = document.getElementById("next")
+    //     prevs.onclick = currentSlide(-1)
+    //     nexts.onclick = currentSlide(1)
 
-}
-function changeBack(){
-  let text = document.querySelector(".butt")
-  console.log(text)
-  text.innerHTML = "<br> Find Your Next Adventure"
+    function changeText() {
+      let text = document.querySelector(".butt")
+      console.log(text)
+      text.innerHTML = "Click here"
 
-
+    }
+    function changeBack() {
+      let text = document.querySelector(".butt")
+      console.log(text)
+      text.innerHTML = "<br> Find Your Next Adventure"
 
 
-}
-document.querySelector(".butt").onmouseover = function(){
 
-changeText()
 
-}
+    }
+    document.querySelector(".butt").onmouseover = function () {
 
-document.querySelector(".butt").onmouseout = function(){
+      changeText()
 
-changeBack()
+    }
 
-}
+    document.querySelector(".butt").onmouseout = function () {
+
+      changeBack()
+
+    }
+    document.getElementById("prev").onclick = function () { plusSlides(1) }
+
+    document.getElementById("next").onclick = function () {
+      plusSlides(-1)
+    }
+
+  document.getElementById("d1").onclick = currentSlide(1) 
+  document.getElementById("d2").onclick = currentSlide(1) 
+  document.getElementById("d3").onclick = currentSlide(1) 
+
   </script>
+  
 </body>
 
 </html>

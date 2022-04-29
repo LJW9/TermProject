@@ -43,13 +43,16 @@ body {
     margin-top: 0px;
     font-size: 16px;
     font-family: sans-serif;
+    display: flexbox;
+    flex-wrap: wrap;
+    align-items: center;
 
 
   }
 
   /* Links inside the navbar */
   .nav a {
-    display: flex;
+    display: flexbox;
     float: left;
     font-size: 16px;
     color: white;
