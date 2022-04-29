@@ -68,10 +68,7 @@
       display: none;
     }
 
-    img {
-      
-      
-    }
+    img {}
 
     /* Next & previous buttons */
     .prev,
@@ -153,7 +150,9 @@
         opacity: 1
       }
     }
-    #blogs , #sitemap{
+
+    #blogs,
+    #sitemap {
       float: right;
       margin-right: 10px;
 
@@ -165,7 +164,7 @@
 
 <body>
   <div class="body">
-    <div class="nav">
+    <div class="nav" id="home">
       <a href="/index.html">Home</a>
       <div class="dropdown">
         <button class="dropbtn">Asia
@@ -214,12 +213,19 @@
       </div>
       <div class="nav" id="sitemap">
         <a href="/sitemap.html">Sitemap</a>
-        <div class="nav" id="contact">
-          <a href="/contact.html">Contact Us</a>
-        </div>
       </div>
+      <div class="nav" id="contact">
+        <a href="/contact.html">Contact Us</a>
+      </div>
+      <div class="nav" id="burger">
+        <div class ="burger"></div>
+        <div class ="burger"></div>
+        <div class ="burger"></div>
 
+      </div>
     </div>
+
+    
 
 
     <div class="slideshow-container">
@@ -333,12 +339,12 @@
       plusSlides(-1)
     }
 
-  document.getElementById("d1").onclick = currentSlide(1) 
-  document.getElementById("d2").onclick = currentSlide(1) 
-  document.getElementById("d3").onclick = currentSlide(1) 
+    document.getElementById("d1").onclick = currentSlide(1)
+    document.getElementById("d2").onclick = currentSlide(1)
+    document.getElementById("d3").onclick = currentSlide(1)
 
   </script>
-  
+
 </body>
 
 </html>
