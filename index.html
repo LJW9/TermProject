@@ -56,8 +56,8 @@
     }
 
     .slideshow-container {
-      /* max-width: 100vh;
-      max-height: 700px; */
+      max-width: 100vh;
+      max-height: 700px;
       position: relative;
       display: flex;
       margin: auto;
@@ -211,12 +211,13 @@
       </div>
       <div class="nav" id="contact">
         <a href="/contact.html">Contact Us</a>
+        
+        </div>
         <div class="nav" id="burger">
           <div class="burger"></div>
           <div class="burger"></div>
           <div class="burger"></div>
 
-        </div>
       </div>
 
     </div>
@@ -300,7 +301,7 @@
       </div>
     </div>
 
-    <div class="dropdown" id="blogs">
+    <div class="dropdown" id="blogs-over">
       <button class="dropbtn">Blogs
       </button>
       <div class="dropdown-content">
@@ -310,14 +311,16 @@
         <a href="">Carribean Islands</a>
       </div>
     </div>
-    <div class="nav" id="sitemap">
+    <div class="nav" id="sitemap-in">
       <a href="/sitemap.html">Sitemap</a>
-      <div class="nav" id="burger">
-        <div class="burger"></div>
-        <div class="burger"></div>
-        <div class="burger"></div>
+
+      
 
       </div>
+      <div class="nav" id="burger-in">
+        <div class="burger-in"></div>
+        <div class="burger-in"></div>
+        <div class="burger-in" ></div>
     </div>
 
   </div>
@@ -375,6 +378,15 @@
 
 
     }
+
+    function burgerChange(){
+      console.log("starting")
+      document.querySelector(".overlay").style.display = "inline-block"
+    }
+    function burgerChangeBack(){
+      console.log("change back")
+      document.querySelector(".overlay").style.display = "none"
+    }
     document.querySelector(".butt").onmouseover = function () {
 
       changeText()
@@ -395,6 +407,16 @@
     document.getElementById("d1").onclick = currentSlide(1)
     document.getElementById("d2").onclick = currentSlide(1)
     document.getElementById("d3").onclick = currentSlide(1)
+
+
+document.getElementById("burger").onclick = function(){
+  burgerChange()
+}
+document.getElementById("burger-in").onclick = function(){
+  burgerChangeBack()
+}
+
+
 
   </script>
 

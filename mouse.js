@@ -54,8 +54,21 @@
     // document.getElementById("beaver").onmouseout = function () {
     //     resizeImage("beaver");
     //   }
+    function burgerChange(){
+        console.log("starting")
+        document.querySelector(".overlay").style.display = "inline-block"
+      }
+      function burgerChangeBack(){
+        console.log("change back")
+        document.querySelector(".overlay").style.display = "none"
+      }
 
-
+    document.getElementById("burger").onclick = function(){
+        burgerChange()
+      }
+      document.getElementById("burger-in").onclick = function(){
+        burgerChangeBack()
+      }
 
 
 

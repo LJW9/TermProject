@@ -25,7 +25,8 @@ h1 {
  
 
 
-  #contact {
+  #blogs,
+  #sitemap,#contact {
     float: right;
     margin-right: 10px;
 
@@ -109,19 +110,14 @@ body {
   .dropdown:hover .dropdown-content {
     display: block;
   }
-#burger{
-  color: white;
-  display:block
 
-
-  
-}
 .burger {
   width: 35px;
   height: 5px;
   background-color: black;
   margin: 6px 0;
   display: none;
+  cursor: pointer;
 
 }
 
@@ -143,15 +139,20 @@ body {
       display: block;
       
     }
-    .hide{
+    .hide,#sitemap,#contact{
       display: none;
     }
     #burger{
       float: right;
+      margin-right: 0px;
       top: 20px;
+      cursor: pointer;
+    }
+    #blogs-over{
+      float: left;
     }
     .overlay{
-      display: block;
+      display: none;
       opacity:0.8;
       background-color:black;
       position:fixed;
@@ -160,21 +161,22 @@ body {
       top:0px;
       left:0px;
       z-index:1000;
-      color: white;
+      color:white;
     }
-    .nav{
-      
-
-    }
-    .burger-in {
-      width: 35px;
-      height: 5px;
-      background-color: black;
-      margin: 6px 0;
-      display: block;
+   #sitemap-in,#blogs-in{
+    display: block;
+  float: left;
+   }
+   .burger-in {
+    width: 35px;
+    height: 5px;
+    background-color:white;
+    margin: 6px 0;
+    display: block;
     
-    }
-      
+    
+  }
+   
 
   
   }
