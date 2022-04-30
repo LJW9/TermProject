@@ -25,6 +25,11 @@ h1 {
  
 
 
+  #contact {
+    float: right;
+    margin-right: 10px;
+
+  }
 
 
 body {
@@ -43,7 +48,6 @@ body {
     margin-top: 0px;
     font-size: 16px;
     font-family: sans-serif;
-    display: flexbox;
     flex-wrap: wrap;
     align-items: center;
   
@@ -127,6 +131,7 @@ body {
     border-radius: 60px;
     height: 50px;
   }
+  .overlay{display: none;}
 
   /* Mobil menu */
   @media all and (max-width: 1000px){
@@ -138,13 +143,38 @@ body {
       display: block;
       
     }
-    .dropbtn , #sitemap{
+    .hide{
       display: none;
     }
     #burger{
       float: right;
       top: 20px;
     }
+    .overlay{
+      display: block;
+      opacity:0.8;
+      background-color:black;
+      position:fixed;
+      width:100%;
+      height:100%;
+      top:0px;
+      left:0px;
+      z-index:1000;
+      color: white;
+    }
+    .nav{
+      
+
+    }
+    .burger-in {
+      width: 35px;
+      height: 5px;
+      background-color: black;
+      margin: 6px 0;
+      display: block;
+    
+    }
+      
 
   
   }

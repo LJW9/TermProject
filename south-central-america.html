@@ -14,20 +14,20 @@
     <link rel="icon" href="/Images/plane2.png" type="image/x-icon">
     <link rel="stylesheet" href="Project.css" />
     <style>
-    
         * {
             box-sizing: border-box;
         }
 
- 
+
         .column-thai {
             float: left;
             width: 50%;
             padding: 10px;
             height: 300px;
-            background-color:coral ;
-   
+            background-color: coral;
+
         }
+
         .column-indo {
             float: left;
             width: 50%;
@@ -35,44 +35,49 @@
             height: 300px;
             background-color: black;
             color: white;
-     
+
         }
 
-        table.indo{
+        table.indo {
             background: coral;
-            
+
         }
+
         .fit {
             width: 100%;
 
         }
-        .a{
+
+        .a {
             background-color: orange;
             width: fit-content;
         }
-        table{
+
+        table {
             vertical-align: middle;
             border: 2px solid white;
             border-collapse: collapse;
         }
-        td{
-            border:2px solid white;
+
+        td {
+            border: 2px solid white;
             padding: 12px 15px;
         }
-        table.thai{
+
+        table.thai {
             background: black;
             color: white;
             width: 90vh;
-           
+
 
         }
-        .video{
+
+        .video {
             display: inline-block;
             background-color: black;
-            margin-left:  100px;
-        
+            margin-left: 100px;
+
         }
-      
     </style>
 
 </head>
@@ -101,7 +106,7 @@
                     <a href="./europe.html">Croatia</a>
                     <a href="./europe.html">United Kingdom</a>
                 </div>
-                
+
             </div>
 
 
@@ -124,7 +129,7 @@
                 </div>
             </div>
 
-            <div class="dropdown">
+            <div class="dropdown" id="blogs">
                 <button class="dropbtn">Blogs
                 </button>
                 <div class="dropdown-content">
@@ -133,109 +138,124 @@
                     <a href="">South America</a>
                     <a href="">Carribean Islands</a>
                 </div>
-                
             </div>
-            <div class="nav">
+            <div class="nav" id="sitemap">
                 <a href="/sitemap.html">Sitemap</a>
-                <div class="nav">
-                  <a href="/contact.html">Contact Us</a>
-                  </div>
-              </div>
-        </div>
+            </div>
+            <div class="nav" id="contact">
+                <a href="/contact.html">Contact Us</a>
+                <div class="nav" id="burger">
+                    <div class="burger"></div>
+                    <div class="burger"></div>
+                    <div class="burger"></div>
 
-
-
-
-        <h2>The Two Most Open Destinations In South/Central America</h2>
-
-        <div class="row">
-            <div class="column-thai">
-                <h2>Costa Rica</h2>
-                <img class="fit" src="./Images/costa.jpeg" alt="rainforest bridge" title="bridge">
-                <div>
-                    <table class="thai">
-                        <caption>Covid-19 Information</caption>
-                        <tr>
-                          <td>Openess Rating </th>
-                          <td class="A"><div class="a">B</div></th>
-                        </tr>
-                        <tr>
-                          <td>Quarantine on arrival</td>
-                          <td>None</td>
-                        </tr>
-                        <tr>
-                          <td>Testing requirment</td>
-                          <td>None</td>
-                        </tr>
-                        <tr>
-                          <td>Vacination Requirment</td>
-                          <td>Yes - Must be presented at establishments within the country  </td>
-                        </tr>
-                        <tr>
-                          <td ><a href="https://github.com/CSSEGISandData/COVID-19"><span class="normal">New daily estimated Cases (7 day average)</span></a</td>
-                          <td>900</td>
-                        </tr>
-                        <tr>
-                          <td>Days Since Reopening</td>
-                          <td>60</td>
-                        </tr>
-                        <tr>
-                          <td>
-                              Health Pass Requirment 
-                          </td>
-                          <td>
-                              <a href="https://salud.go.cr">Must Be Completed Prior to Arrival</a>
-                          </td>
-                        </tr>
-                     
-                  </table>
                 </div>
-                <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Uhe1X6OpoSo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-            </div>
-            <div class="column-indo">
-                <h2>Belize</h2>
-                <img class="fit" src="./Images/belize.jpeg">
-                <div class="indo">
-                    <caption>Covid-19 Information</caption>
-                    <table class="indo">
-                        <tr>
-                          <td>Openess Rating </th>
-                          <td class="A"><div class="a">B+</div></th>
-                        </tr>
-                        <tr>
-                          <td>Quarantine on arrival</td>
-                          <td>None</td>
-                        </tr>
-                        <tr>
-                          <td>Testing requirment</td>
-                          <td>PCR Prior to arrival- 24hours - Unless Fully Vacinated</td>
-                        </tr>
-                        <tr>
-                          <td>Vacination Requirment</td>
-                          <td>none- but must show proof of vancination</td>
-                        </tr>
-                        <tr>
-                          <td>New daily estimated Cases (7 day average)</td>
-                          <td>14</td>
-                        </tr>
-                        <tr>
-                          <td>Days Since Reopening</td>
-                          <td>30</td>
-                        </tr>
-                        <tr>
-                          <td>
-                              Health Insurance Requirment 
-                          </td>
-                          <td>
-                             <a href="https://www.belizetravelinsurance.com/">Local Health Insurace</a>
-                          </td>
-                        </tr>
-                        </table>
-                         </div>
-                
             </div>
         </div>
+    </div>
+
+
+
+
+    <h2>The Two Most Open Destinations In South/Central America</h2>
+
+    <div class="row">
+        <div class="column-thai">
+            <h2>Costa Rica</h2>
+            <img class="fit" src="./Images/costa.jpeg" alt="rainforest bridge" title="bridge">
+            <div>
+                <table class="thai">
+                    <caption>Covid-19 Information</caption>
+                    <tr>
+                        <td>Openess Rating </th>
+                        <td class="A">
+                            <div class="a">B</div>
+                            </th>
+                    </tr>
+                    <tr>
+                        <td>Quarantine on arrival</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>Testing requirment</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>Vacination Requirment</td>
+                        <td>Yes - Must be presented at establishments within the country </td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://github.com/CSSEGISandData/COVID-19"><span class="normal">New daily
+                                    estimated Cases (7 day average)</span></a< /td>
+                        <td>900</td>
+                    </tr>
+                    <tr>
+                        <td>Days Since Reopening</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Health Pass Requirment
+                        </td>
+                        <td>
+                            <a href="https://salud.go.cr">Must Be Completed Prior to Arrival</a>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Uhe1X6OpoSo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="column-indo">
+            <h2>Belize</h2>
+            <img class="fit" src="./Images/belize.jpeg">
+            <div class="indo">
+                <caption>Covid-19 Information</caption>
+                <table class="indo">
+                    <tr>
+                        <td>Openess Rating </th>
+                        <td class="A">
+                            <div class="a">B+</div>
+                            </th>
+                    </tr>
+                    <tr>
+                        <td>Quarantine on arrival</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>Testing requirment</td>
+                        <td>PCR Prior to arrival- 24hours - Unless Fully Vacinated</td>
+                    </tr>
+                    <tr>
+                        <td>Vacination Requirment</td>
+                        <td>none- but must show proof of vancination</td>
+                    </tr>
+                    <tr>
+                        <td>New daily estimated Cases (7 day average)</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>Days Since Reopening</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Health Insurance Requirment
+                        </td>
+                        <td>
+                            <a href="https://www.belizetravelinsurance.com/">Local Health Insurace</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
 
 </body>
 
