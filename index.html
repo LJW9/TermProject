@@ -68,7 +68,6 @@
       display: none;
     }
 
-    img {}
 
     /* Next & previous buttons */
     .prev,
@@ -379,14 +378,7 @@
 
     }
 
-    function burgerChange(){
-      console.log("starting")
-      document.querySelector(".overlay").style.display = "inline-block"
-    }
-    function burgerChangeBack(){
-      console.log("change back")
-      document.querySelector(".overlay").style.display = "none"
-    }
+    
     document.querySelector(".butt").onmouseover = function () {
 
       changeText()
@@ -409,12 +401,6 @@
     document.getElementById("d3").onclick = currentSlide(1)
 
 
-document.getElementById("burger").onclick = function(){
-  burgerChange()
-}
-document.getElementById("burger-in").onclick = function(){
-  burgerChangeBack()
-}
 
 
 
