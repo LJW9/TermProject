@@ -11,12 +11,14 @@ return fetch(
             for(let i=0; i<jsondata.length; i++){
                 result = jsondata[i].restaurant;
                 console.log(result)
-               value = document.getElementById("restaurant-list").innerText 
-            document.getElementById("restaurant-list").innerText = value + result;
+               value = document.getElementById("restaurant-list").innerHTML
+            document.getElementById("restaurant-list").innerHTML =value +"<br>"+ result;
 
 
             }
+            document.getElementById("restaurant-list").style.color = "white";
          }
+
     );
 }
 
