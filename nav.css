@@ -22,12 +22,16 @@ div.home{
     text-decoration: none;
     list-style: none;
     cursor: pointer;
-    padding: 20%;
-    border-bottom: 1px white solid;
+    height: 20vh;
+    border-bottom: 2px white solid;
     color: white;
     font-size: 2vh;
     font-family: 'Times New Roman', Times, serif;
    
+}
+p{
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 div.home:hover{
     background-color: red;
