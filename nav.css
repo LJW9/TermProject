@@ -98,11 +98,11 @@ ul ul ul {
     
 }
 
-li:hover {
+li:hover, li:active {
 	background-color: #95B4CA;
 }
 
-.parent li:hover {
+.parent li:hover , .parent li:active {
 	background-color: #F0F0F0;
 }
 

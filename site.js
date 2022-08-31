@@ -54,7 +54,7 @@ return fetch(
             // document.getElementById("restaurant-list").innerHTML =restaurantVal+"&nbsp; &nbsp; &nbsp; &nbsp;"+cuisineVal+"          "+areaVal+"          "+cityVal +"<br>"+ restaurant+"          "+cuisine+"          "+area+"          "+city;
             
             if(area == clicked){
-                console.log("why so many?")
+            
                 document.getElementById("restaurant-list").innerHTML =  result + "<br>" + value
             }
    
@@ -84,6 +84,33 @@ document.getElementById("marylebone").onclick = function(evt){
     areaf(evt.target.innerText)
 } 
 
+document.getElementById("greek").onclick = function(evt){
+    console.log(evt)
+    areaf(evt.target.innerText)
+} 
+document.getElementById("italian").onclick = function(evt){
+    console.log(evt)
+    areaf(evt.target.innerText)
+} 
+document.getElementById("steakhouse").onclick = function(evt){
+    console.log(evt)
+    areaf(evt.target.innerText)
+} 
+
+document.getElementById("french").onclick = function(evt){
+    console.log(evt)
+    areaf(evt.target.innerText)
+} 
+
+document.getElementById("lebanese").onclick = function(evt){
+    console.log(evt)
+    areaf(evt.target.innerText)
+} 
+
+document.getElementById("asian").onclick = function(evt){
+    console.log(evt)
+    areaf(evt.target.innerText)
+} 
 
 
 
