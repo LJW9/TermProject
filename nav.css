@@ -63,7 +63,7 @@ body{
 	text-decoration: none;
 }
 
-.parent:hover>ul {
+.parent:hover>ul, .parent:active>ul {
 	display: block;
 	position: absolute;
 }

@@ -124,11 +124,11 @@ document.getElementById("asian").onclick = function(evt){
 
 
 
-// Dropdown
-// $(document).ready(function(){
-//     $('.dropdown-submenu a.test').on("click", function(e){
-//       $(this).next('ul').toggle();
-//       e.stopPropagation();
-//       e.preventDefault();
-//     });
-//   });
+//Dropdown
+$(document).ready(function(){
+    $('.dropdown-submenu a.test').on("click", function(e){
+      $(this).next('ul').toggle();
+      e.stopPropagation();
+      e.preventDefault();
+    });
+  });
