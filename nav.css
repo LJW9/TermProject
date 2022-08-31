@@ -63,8 +63,8 @@ body{
 	text-decoration: none;
 }
 
-.parent:hover>ul, .parent:focus>ul {
-	display: block;
+.parent>ul{
+	
 	position: absolute;
 }
 
@@ -98,13 +98,9 @@ ul ul ul {
     
 }
 
-li:hover, li:focus {
-	background-color: #95B4CA;
-}
 
-.parent li:hover , .parent li:focus {
-	background-color: #F0F0F0;
-}
+
+
 
 .expand {
 	font-size: 12px;

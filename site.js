@@ -23,6 +23,7 @@ return fetch(
            let list =  document.getElementById("restaurant-list")
            list.style.color = "white";
            list.style.lineHeight = "200%"
+           
          }
     );
 }
@@ -62,6 +63,8 @@ return fetch(
            let list =  document.getElementById("restaurant-list")
            list.style.color = "white";
            list.style.lineHeight = "200%"
+           document.getElementById("area-display").style.display = "none"
+           document.getElementById("cuisine-display").style.display = "none"
          }
     );
 }
@@ -124,11 +127,27 @@ document.getElementById("asian").onclick = function(evt){
 
 
 
-//Dropdown
-$(document).ready(function(){
-    $('.dropdown-submenu a.test').on("click", function(e){
-      $(this).next('ul').toggle();
-      e.stopPropagation();
-      e.preventDefault();
-    });
-  });
+//dropdown on click
+function dropdown(){
+    let areaDis = document.getElementById("area-display")
+areaDis.style.display = "block"
+console.log("changeing")
+}
+
+ const areaBtn = document.getElementById("area-btn");
+ 
+  areaBtn.onclick = function(){
+    dropdown()
+}
+
+function dropdown(){
+    let cuisineDis = document.getElementById("cuisine-display")
+cuisineDis.style.display = "block"
+console.log("changeing")
+}
+
+ 
+ const cuisineBtn = document.getElementById("cuisine-btn");
+  cuisineBtn.onclick = function(){
+    dropdown()
+}
