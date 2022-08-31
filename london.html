@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,50 @@
     <title>Document</title>
     <link rel="stylesheet" href="/nav.css" />
 </head>
+
 <body>
     <div>
-        <a href="/index.html"><div class="home" >Home</div></a>
-    <div>    
-       <div>
-        <button id="getData" type="menu">getData</button>
-        <ul id="restaurant-list">
-            
+        <a href="/index.html">
+            <div class="home">Home</div>
+        </a>
+        <div class="full">
+
+            <ul id="menu">
+                <li id="all-restaurants" class="parent"><a href="#">All Restaurants</a>
+                </li>
+                <li class="parent"><a href="#">Area</a>
+                    <ul class="child">
+                        <li id="marylebone" class="areas"><a href="#">Marylebone</a></li>
+                        <li id="mayfair" class="areas"><a href="#">Mayfair</a></li>
+                        <li id="chelsea" class="areas"><a href="#">Chelsea</a></li>
+                        <li id="knightsbridge" class="areas"><a href="#">Knightsbridge</a></li>
+                    </ul>
+                </li>
+                <li class="parent"><a href="#">Cuisine</a>
+                    <ul class="child">
+                        <li><a href="#">Greek</a></li>
+                        <li><a href="#">Italian</a></li>
+                        <li><a href="#">Steakhouse</a></li>
+                        <li><a href="#">French</a></li>
+                        <li><a href="#">Lebanese</a></li>
+                        <li><a href="#">Asian</a></li>
+
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul id="restaurant-list">
+
         </ul>
+        </div>
+    </div>
+    
+    </div>
+    <script src="/site.js">
 
-       </div>
-       <script src="/site.js">
-
-       </script>
+    </script>
 </body>
+
 </html>

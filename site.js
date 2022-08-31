@@ -1,5 +1,5 @@
 
-function getData(location) {
+function getData() {
     document.getElementById("restaurant-list").innerText = ""
 return fetch(
         "/data.json"
@@ -8,43 +8,100 @@ return fetch(
     ).then(
         jsondata => {
             console.log("path 1");
+            console.log(jsondata.length)
             for(let i=0; i<jsondata.length; i++){
-                result = jsondata[i].restaurant;
-                console.log(result)
+                restaurant = jsondata[i].restaurant;
+                cuisine = jsondata[i].cuisine;
+                area = jsondata[i].area;
+                city = jsondata[i].city;
+                console.log(i)
                value = document.getElementById("restaurant-list").innerHTML
-            document.getElementById("restaurant-list").innerHTML =value +"<br>"+ result;
-
-
+            // document.getElementById("restaurant-list").innerHTML =restaurantVal+"&nbsp; &nbsp; &nbsp; &nbsp;"+cuisineVal+"          "+areaVal+"          "+cityVal +"<br>"+ restaurant+"          "+cuisine+"          "+area+"          "+city;
+            let result = restaurant+ " "+ cuisine +" "+area 
+            document.getElementById("restaurant-list").innerHTML =  result + "<br>" + value
             }
-            document.getElementById("restaurant-list").style.color = "white";
+           let list =  document.getElementById("restaurant-list")
+           list.style.color = "white";
+           list.style.lineHeight = "200%"
          }
+    );
+}
+document.getElementById("all-restaurants").onclick = function(){
+    getData()
+}
 
+
+
+function areaf(clicked) {
+    document.getElementById("restaurant-list").innerText = ""
+    
+return fetch(
+        "/data.json"
+    ).then(
+        response => response.json()
+    ).then(
+        jsondata => {
+            console.log("path 1");
+            console.log(jsondata.length)
+            for(let i=0; i<jsondata.length; i++){
+                restaurant = jsondata[i].restaurant;
+                cuisine = jsondata[i].cuisine;
+                area = jsondata[i].area;
+                city = jsondata[i].city;
+                console.log(area)
+               value = document.getElementById("restaurant-list").innerHTML
+               let result = restaurant+ " "+ cuisine +" "+area 
+            // document.getElementById("restaurant-list").innerHTML =restaurantVal+"&nbsp; &nbsp; &nbsp; &nbsp;"+cuisineVal+"          "+areaVal+"          "+cityVal +"<br>"+ restaurant+"          "+cuisine+"          "+area+"          "+city;
+            
+            if(area == clicked){
+                console.log("why so many?")
+                document.getElementById("restaurant-list").innerHTML =  result + "<br>" + value
+            }
+   
+            }
+           let list =  document.getElementById("restaurant-list")
+           list.style.color = "white";
+           list.style.lineHeight = "200%"
+         }
     );
 }
 
+document.getElementById("mayfair").onclick = function(evt){
+    console.log(evt)
+    areaf(evt.target.innerText)
+} 
 
-function rollDice(){
-    const times = 1000;
-    let sum = 0;
-    for(let i=0; i<times; i++){
-        let res = Math.floor(Math.random() * 6) + 1
-        sum += res
-    console.log(res)
-    
- }
- console.log("final result"+sum)
- document.getElementById("result").innerHTML = sum + "   "+ sum/times
-
-
-
-}
-document.querySelector('button').onclick = function(){
-    rollDice()
-}
+document.getElementById("knightsbridge").onclick = function(evt){
+    console.log(evt)
+    areaf(evt.target.innerText)
+} 
+document.getElementById("chelsea").onclick = function(evt){
+    console.log(evt)
+    areaf(evt.target.innerText)
+} 
+document.getElementById("marylebone").onclick = function(evt){
+    console.log(evt)
+    areaf(evt.target.innerText)
+} 
 
 
 
 
-document.getElementById("getData").onclick = function(){
-    getData()
-}
+
+
+
+
+
+
+
+
+
+
+// Dropdown
+// $(document).ready(function(){
+//     $('.dropdown-submenu a.test').on("click", function(e){
+//       $(this).next('ul').toggle();
+//       e.stopPropagation();
+//       e.preventDefault();
+//     });
+//   });
