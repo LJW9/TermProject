@@ -63,7 +63,7 @@ body{
 	text-decoration: none;
 }
 
-.parent:hover>ul, .parent:active>ul {
+.parent:hover>ul, .parent:focus>ul {
 	display: block;
 	position: absolute;
 }
@@ -98,11 +98,11 @@ ul ul ul {
     
 }
 
-li:hover, li:active {
+li:hover, li:focus {
 	background-color: #95B4CA;
 }
 
-.parent li:hover , .parent li:active {
+.parent li:hover , .parent li:focus {
 	background-color: #F0F0F0;
 }
 
