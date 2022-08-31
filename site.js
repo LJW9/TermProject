@@ -53,7 +53,7 @@ return fetch(
                let result = restaurant+ " "+ cuisine +" "+area 
             // document.getElementById("restaurant-list").innerHTML =restaurantVal+"&nbsp; &nbsp; &nbsp; &nbsp;"+cuisineVal+"          "+areaVal+"          "+cityVal +"<br>"+ restaurant+"          "+cuisine+"          "+area+"          "+city;
             
-            if(area == clicked){
+            if(area == clicked || cuisine == clicked){
             
                 document.getElementById("restaurant-list").innerHTML =  result + "<br>" + value
             }
