@@ -140,7 +140,7 @@ console.log("changeing")
     dropdown()
 }
 
-function dropdown(){
+function dropdown2(){
     let cuisineDis = document.getElementById("cuisine-display")
 cuisineDis.style.display = "block"
 console.log("changeing")
@@ -149,5 +149,5 @@ console.log("changeing")
  
  const cuisineBtn = document.getElementById("cuisine-btn");
   cuisineBtn.onclick = function(){
-    dropdown()
+    dropdown2()
 }
