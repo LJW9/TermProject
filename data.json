@@ -1,41 +1,42 @@
-[{
+[
+    {
     "restaurant":"Opso",
     "cuisine":"Greek",
     "area":"Marylebone",
-    "city":"London"
-}, {
-    "restaurant":"Royal China Club",
-    "cuisine":"Asian",
-    "area":"Marylebone",
-    "city":"London"
-}, {
-    "restaurant":"34 Mayfair",
-    "cuisine":"Steakhouse",
-    "area":"Mayfair",
-    "city":"London"
-}, {
+    "city":"London",
+    "link":"https://www.opso.co.uk/reservations",
+    "widget": {
+        "venueId": "opso",
+        "triggerId": "opso-res-root",
+        "type": "reservations",
+        "styleButton": false,
+        "clientToken": ""
+    }
+    
+},{
     "restaurant":"La Petite Maison",
     "cuisine":"French",
     "area":"Mayfair",
-    "city":"London"
-}, {
-    "restaurant":"Riccardo's Italian Restaurant",
-    "cuisine":"Italian",
-    "area":"Chelsea",
-    "city":"London"
-}, {
-    "restaurant":"Ishbilia",
-    "cuisine":"Lebanese",
+    "city":"London",
+    "widget": {
+        "venueId": "lpmlondon",
+        "triggerId": "sr-res-root-103",
+        "type": "reservations",
+        "styleButton": false
+    
+    }
+
+},{
+    "restaurant":"Zuma London",
+    "cuisine":"Japanese",
     "area":"Knightsbridge",
-    "city":"London"
-}, {
-    "restaurant":"Cinquecento Pizzeria",
-    "cuisine":"italian",
-    "area":"Chelsea",
-    "city":"London"
-}, {
-    "restaurant":"Oka",
-    "cuisine":"Asian",
-    "area":"Mayfair",
-    "city":"London"
-}]
+    "city":"London",
+    "widget": {
+        "venueId": "zumalondon",
+        "triggerId": "sevenrooms-widget-button",
+        "type": "reservations",
+        "styleButton": false
+}
+}
+
+]
